@@ -1,0 +1,672 @@
+msgctxt "app"
+msgid "Active"
+msgstr ""
+
+msgctxt "app"
+msgid "Add"
+msgstr ""
+
+msgctxt "app"
+msgid "Address"
+msgstr ""
+
+msgctxt "app"
+msgid "Administrator"
+msgstr ""
+
+msgctxt "app"
+msgid "Advertisement"
+msgstr ""
+
+msgctxt "app"
+msgid "Advertisement name"
+msgstr ""
+
+msgctxt "app"
+msgid "Advertisement successfully saved."
+msgstr ""
+
+msgctxt "app"
+msgid "After saving advertisement, You can add attachment for your advertisement"
+msgstr ""
+
+msgctxt "app"
+msgid "After saving advertisement, You can add gallery for your advertisement"
+msgstr ""
+
+msgctxt "app"
+msgid "All"
+msgstr ""
+
+msgctxt "app"
+msgid "Already registered? Sign in!"
+msgstr ""
+
+msgctxt "app"
+msgid "Are you sure you want to delete this item?"
+msgstr ""
+
+msgctxt "app"
+msgid "Attachment"
+msgstr ""
+
+msgctxt "app"
+msgid "Attachment limitation per advertisement reached!"
+msgstr ""
+
+msgctxt "app"
+msgid "Attachment saved!"
+msgstr ""
+
+msgctxt "app"
+msgid "Attachments"
+msgstr ""
+
+msgctxt "app"
+msgid "Author"
+msgstr ""
+
+msgctxt "app"
+msgid "Body"
+msgstr ""
+
+msgctxt "app"
+msgid "Categories"
+msgstr ""
+
+msgctxt "app"
+msgid "Categories Manager"
+msgstr ""
+
+msgctxt "app"
+msgid "Category"
+msgstr ""
+
+msgctxt "app"
+msgid "Category name"
+msgstr ""
+
+msgctxt "app"
+msgid "Category updated."
+msgstr ""
+
+msgctxt "app"
+msgid "Changed time"
+msgstr ""
+
+msgctxt "app"
+msgid "Check your email for further instructions."
+msgstr ""
+
+msgctxt "app"
+msgid "Cities"
+msgstr ""
+
+msgctxt "app"
+msgid "City name"
+msgstr ""
+
+msgctxt "app"
+msgid "City successfully saved."
+msgstr ""
+
+msgctxt "app"
+msgid "Clear system cache"
+msgstr ""
+
+msgctxt "app"
+msgid "Clear thumbnails images"
+msgstr ""
+
+msgctxt "app"
+msgid "Clear website assets"
+msgstr ""
+
+msgctxt "app"
+msgid "Confirm Password"
+msgstr ""
+
+msgctxt "app"
+msgid "Confirm email"
+msgstr ""
+
+msgctxt "app"
+msgid "Contact with us"
+msgstr ""
+
+msgctxt "app"
+msgid "Countries"
+msgstr ""
+
+msgctxt "app"
+msgid "Country"
+msgstr ""
+
+msgctxt "app"
+msgid "Country name"
+msgstr ""
+
+msgctxt "app"
+msgid "Country successfully saved."
+msgstr ""
+
+msgctxt "app"
+msgid "Created at"
+msgstr ""
+
+msgctxt "app"
+msgid "Delete"
+msgstr ""
+
+msgctxt "app"
+msgid "Deleted"
+msgstr ""
+
+msgctxt "app"
+msgid "Description"
+msgstr ""
+
+msgctxt "app"
+msgid "Detail"
+msgstr ""
+
+msgctxt "app"
+msgid "Disable"
+msgstr ""
+
+msgctxt "app"
+msgid "Disabled"
+msgstr ""
+
+msgctxt "app"
+msgid "Download"
+msgstr ""
+
+msgctxt "app"
+msgid "Email"
+msgstr ""
+
+msgctxt "app"
+msgid "Enable"
+msgstr ""
+
+msgctxt "app"
+msgid "English"
+msgstr ""
+
+msgctxt "app"
+msgid "Error on saving advertisement."
+msgstr ""
+
+msgctxt "app"
+msgid "Error on saving attachment."
+msgstr ""
+
+msgctxt "app"
+msgid "Error on saving category."
+msgstr ""
+
+msgctxt "app"
+msgid "Error on saving city."
+msgstr ""
+
+msgctxt "app"
+msgid "Error on saving country."
+msgstr ""
+
+msgctxt "app"
+msgid "Error on saving image."
+msgstr ""
+
+msgctxt "app"
+msgid "Error on saving province."
+msgstr ""
+
+msgctxt "app"
+msgid "Error!"
+msgstr ""
+
+msgctxt "app"
+msgid "Find business in nearest you! - Introduce your business!"
+msgstr ""
+
+msgctxt "app"
+msgid "First"
+msgstr ""
+
+msgctxt "app"
+msgid "Follow the link below to reset your password:"
+msgstr ""
+
+msgctxt "app"
+msgid "For change username or password please visit to site and login with your account."
+msgstr ""
+
+msgctxt "app"
+msgid "Gallery"
+msgstr ""
+
+msgctxt "app"
+msgid "Geographic"
+msgstr ""
+
+msgctxt "app"
+msgid "Geographic location"
+msgstr ""
+
+msgctxt "app"
+msgid "Get location"
+msgstr ""
+
+msgctxt "app"
+msgid "Hello {username},"
+msgstr ""
+
+msgctxt "app"
+msgid "Hello, This is your registration information:"
+msgstr ""
+
+msgctxt "app"
+msgid "Home"
+msgstr ""
+
+msgctxt "app"
+msgid "ID"
+msgstr ""
+
+msgctxt "app"
+msgid "IP"
+msgstr ""
+
+msgctxt "app"
+msgid "Icon"
+msgstr ""
+
+msgctxt "app"
+msgid "If you forgot your password you can reset it."
+msgstr ""
+
+msgctxt "app"
+msgid "If you have business inquiries or other questions, please fill out the following form to contact us. Thank you."
+msgstr ""
+
+msgctxt "app"
+msgid "Image"
+msgstr ""
+
+msgctxt "app"
+msgid "Image limitation per advertisement reached!"
+msgstr ""
+
+msgctxt "app"
+msgid "Image saved!"
+msgstr ""
+
+msgctxt "app"
+msgid "Incorrect old password."
+msgstr ""
+
+msgctxt "app"
+msgid "Incorrect username or password."
+msgstr ""
+
+msgctxt "app"
+msgid "Index"
+msgstr ""
+
+msgctxt "app"
+msgid "Information"
+msgstr ""
+
+msgctxt "app"
+msgid "Information successfully updated."
+msgstr ""
+
+msgctxt "app"
+msgid "Introduce business"
+msgstr ""
+
+msgctxt "app"
+msgid "Introduce your business, Your business on the map, image gallery for your business, attachments for your business, Mark your business location in map"
+msgstr ""
+
+msgctxt "app"
+msgid "Language"
+msgstr ""
+
+msgctxt "app"
+msgid "Last"
+msgstr ""
+
+msgctxt "app"
+msgid "Latitude"
+msgstr ""
+
+msgctxt "app"
+msgid "List View"
+msgstr ""
+
+msgctxt "app"
+msgid "Loading..."
+msgstr ""
+
+msgctxt "app"
+msgid "Login"
+msgstr ""
+
+msgctxt "app"
+msgid "Login with"
+msgstr ""
+
+msgctxt "app"
+msgid "Logout ({username})"
+msgstr ""
+
+msgctxt "app"
+msgid "Longitude"
+msgstr ""
+
+msgctxt "app"
+msgid "Maintenance"
+msgstr ""
+
+msgctxt "app"
+msgid "Manager"
+msgstr ""
+
+msgctxt "app"
+msgid "Map"
+msgstr ""
+
+msgctxt "app"
+msgid "Map View"
+msgstr ""
+
+msgctxt "app"
+msgid "My advertisement"
+msgstr ""
+
+msgctxt "app"
+msgid "Name"
+msgstr ""
+
+msgctxt "app"
+msgid "New"
+msgstr ""
+
+msgctxt "app"
+msgid "New category"
+msgstr ""
+
+msgctxt "app"
+msgid "New category successfully saved."
+msgstr ""
+
+msgctxt "app"
+msgid "New city"
+msgstr ""
+
+msgctxt "app"
+msgid "New country"
+msgstr ""
+
+msgctxt "app"
+msgid "New password"
+msgstr ""
+
+msgctxt "app"
+msgid "New province"
+msgstr ""
+
+msgctxt "app"
+msgid "Next"
+msgstr ""
+
+msgctxt "app"
+msgid "No matching records found"
+msgstr ""
+
+msgctxt "app"
+msgid "Old password"
+msgstr ""
+
+msgctxt "app"
+msgid "Panel"
+msgstr ""
+
+msgctxt "app"
+msgid "Password"
+msgstr ""
+
+msgctxt "app"
+msgid "Password reset for {name}"
+msgstr ""
+
+msgctxt "app"
+msgid "Password reset token cannot be blank."
+msgstr ""
+
+msgctxt "app"
+msgid "Password successfully updated."
+msgstr ""
+
+msgctxt "app"
+msgid "Persian"
+msgstr ""
+
+msgctxt "app"
+msgid "Please contact us if you think this is a server error. Thank you."
+msgstr ""
+
+msgctxt "app"
+msgid "Previous"
+msgstr ""
+
+msgctxt "app"
+msgid "Province"
+msgstr ""
+
+msgctxt "app"
+msgid "Province name"
+msgstr ""
+
+msgctxt "app"
+msgid "Province successfully saved."
+msgstr ""
+
+msgctxt "app"
+msgid "Provinces"
+msgstr ""
+
+msgctxt "app"
+msgid "Register"
+msgstr ""
+
+msgctxt "app"
+msgid "Register Advertisement"
+msgstr ""
+
+msgctxt "app"
+msgid "Registered with"
+msgstr ""
+
+msgctxt "app"
+msgid "Remember me"
+msgstr ""
+
+msgctxt "app"
+msgid "Request password reset"
+msgstr ""
+
+msgctxt "app"
+msgid "Reset password"
+msgstr ""
+
+msgctxt "app"
+msgid "Role Manager"
+msgstr ""
+
+msgctxt "app"
+msgid "Save"
+msgstr ""
+
+msgctxt "app"
+msgid "Search"
+msgstr ""
+
+msgctxt "app"
+msgid "Searching just over the showed area in the map"
+msgstr ""
+
+msgctxt "app"
+msgid "Select from map"
+msgstr ""
+
+msgctxt "app"
+msgid "Select..."
+msgstr ""
+
+msgctxt "app"
+msgid "Send"
+msgstr ""
+
+msgctxt "app"
+msgid "Sorry, we are unable to reset password for email provided."
+msgstr ""
+
+msgctxt "app"
+msgid "Status"
+msgstr ""
+
+msgctxt "app"
+msgid "Subject"
+msgstr ""
+
+msgctxt "app"
+msgid "Successfully deleted!"
+msgstr ""
+
+msgctxt "app"
+msgid "Successfully status changed!"
+msgstr ""
+
+msgctxt "app"
+msgid "Thank you for contacting us. We will respond to you as soon as possible."
+msgstr ""
+
+msgctxt "app"
+msgid "The above error occurred while the Web server was processing your request."
+msgstr ""
+
+msgctxt "app"
+msgid "The requested file does not exist."
+msgstr ""
+
+msgctxt "app"
+msgid "The requested page does not exist."
+msgstr ""
+
+msgctxt "app"
+msgid "There is no user with such email."
+msgstr ""
+
+msgctxt "app"
+msgid "There was an error sending email."
+msgstr ""
+
+msgctxt "app"
+msgid "This email address has already been taken."
+msgstr ""
+
+msgctxt "app"
+msgid "This username has already been taken."
+msgstr ""
+
+msgctxt "app"
+msgid "Title"
+msgstr ""
+
+msgctxt "app"
+msgid "Update"
+msgstr ""
+
+msgctxt "app"
+msgid "Update advertisement {advertisement}"
+msgstr ""
+
+msgctxt "app"
+msgid "Update information"
+msgstr ""
+
+msgctxt "app"
+msgid "Update information {city}"
+msgstr ""
+
+msgctxt "app"
+msgid "Update information {country}"
+msgstr ""
+
+msgctxt "app"
+msgid "Update information {province}"
+msgstr ""
+
+msgctxt "app"
+msgid "Update information {username}"
+msgstr ""
+
+msgctxt "app"
+msgid "Update password"
+msgstr ""
+
+msgctxt "app"
+msgid "Updated at"
+msgstr ""
+
+msgctxt "app"
+msgid "Upload"
+msgstr ""
+
+msgctxt "app"
+msgid "Uploading..."
+msgstr ""
+
+msgctxt "app"
+msgid "Username"
+msgstr ""
+
+msgctxt "app"
+msgid "Users Manager"
+msgstr ""
+
+msgctxt "app"
+msgid "Verification Code"
+msgstr ""
+
+msgctxt "app"
+msgid "Version {version}"
+msgstr ""
+
+msgctxt "app"
+msgid "Welcome to {name}"
+msgstr ""
+
+msgctxt "app"
+msgid "Wrong password reset token."
+msgstr ""
+
+msgctxt "app"
+msgid "You haven't enough permission to disable this user!"
+msgstr ""
+
+msgctxt "app"
+msgid "Your password changed and your new password is:"
+msgstr ""
+
+msgctxt "app"
+msgid "Your password changed {name}"
+msgstr ""
+
+msgctxt "app"
+msgid "attachment"
+msgstr ""
+

@@ -1,0 +1,712 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Admap\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Araz <mjafaripur@yahoo.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fa_IR\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Admap\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Jafaripur <mjafaripur@yahoo.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fa_IR\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgctxt "app"
+msgid "Version {version}"
+msgstr "ویرایش {version}"
+
+msgctxt "app"
+msgid "Active"
+msgstr "فعال"
+
+msgctxt "app"
+msgid "Add"
+msgstr "افزودن"
+
+msgctxt "app"
+msgid "Address"
+msgstr "آدرس"
+
+msgctxt "app"
+msgid "Administrator"
+msgstr "مدیریت"
+
+msgctxt "app"
+msgid "Advertisement"
+msgstr "تبلیغات"
+
+msgctxt "app"
+msgid "Advertisement name"
+msgstr "نام تبلیغات"
+
+msgctxt "app"
+msgid "Advertisement successfully saved."
+msgstr "تبلیغات با موفقیت ذخیره شد."
+
+msgctxt "app"
+msgid ""
+"After saving advertisement, You can add attachment for your advertisement"
+msgstr "بعد از ذخیره تبلیغات می توانید برای تبلیغات خود ضمیمه اضافه کنید."
+
+msgctxt "app"
+msgid "After saving advertisement, You can add gallery for your advertisement"
+msgstr "بعد از ذخیره تبلیغات می توانید برای گالری تصاویر، تصاویر اضافه کنید."
+
+msgctxt "app"
+msgid "All"
+msgstr "همه"
+
+msgctxt "app"
+msgid "Already registered? Sign in!"
+msgstr "عضو هستید؟ وارد شوید!"
+
+msgctxt "app"
+msgid "Are you sure you want to delete this item?"
+msgstr "آیا مایل به حذف مورد انتخابی می باشید؟"
+
+msgctxt "app"
+msgid "Attachment"
+msgstr "ضمیمه"
+
+msgctxt "app"
+msgid "Attachment limitation per advertisement reached!"
+msgstr "حداکثر تعداد ضمیمه برای این تبلیغات به حداکثر رسیده است!"
+
+msgctxt "app"
+msgid "Attachment saved!"
+msgstr "ضمیمه ذخیره شد!"
+
+msgctxt "app"
+msgid "Attachments"
+msgstr "ضمیمه ها"
+
+msgctxt "app"
+msgid "Author"
+msgstr "مولف"
+
+msgctxt "app"
+msgid "Body"
+msgstr "متن"
+
+msgctxt "app"
+msgid "Categories"
+msgstr "بخش ها"
+
+msgctxt "app"
+msgid "Categories Manager"
+msgstr "مدیریت بخش ها"
+
+msgctxt "app"
+msgid "Category"
+msgstr "بخش ها"
+
+msgctxt "app"
+msgid "Category name"
+msgstr "نام بخش"
+
+msgctxt "app"
+msgid "Category updated."
+msgstr "بخش بروز رسانی شد."
+
+msgctxt "app"
+msgid "Changed time"
+msgstr "زمان تغییر یافته"
+
+msgctxt "app"
+msgid "Check your email for further instructions."
+msgstr "برای اطلاعات بیشتر لطفا ایمیل خود را بررسی کنید."
+
+msgctxt "app"
+msgid "Cities"
+msgstr "شهرها"
+
+msgctxt "app"
+msgid "City name"
+msgstr "نام شهر"
+
+msgctxt "app"
+msgid "City successfully saved."
+msgstr "شهر با موفقیت ذخیره شد."
+
+msgctxt "app"
+msgid "Clear system cache"
+msgstr "پاک کردن حافظه نهان"
+
+msgctxt "app"
+msgid "Clear thumbnails images"
+msgstr "پاک کردن عکس های موقتی"
+
+msgctxt "app"
+msgid "Clear website assets"
+msgstr "پاک کردن فایل های مربوط به وب"
+
+msgctxt "app"
+msgid "Confirm Password"
+msgstr "تایید رمز عبور"
+
+msgctxt "app"
+msgid "Confirm email"
+msgstr "تایید ایمیل"
+
+msgctxt "app"
+msgid "Contact with us"
+msgstr "ارتباط با ما"
+
+msgctxt "app"
+msgid "Countries"
+msgstr "کشورها"
+
+msgctxt "app"
+msgid "Country"
+msgstr "کشور"
+
+msgctxt "app"
+msgid "Country name"
+msgstr "نام کشور"
+
+msgctxt "app"
+msgid "Country successfully saved."
+msgstr "کشور با موفقیت ذخیره شد."
+
+msgctxt "app"
+msgid "Created at"
+msgstr "ایجاد شده در"
+
+msgctxt "app"
+msgid "Delete"
+msgstr "حذف"
+
+msgctxt "app"
+msgid "Deleted"
+msgstr "حذف شده"
+
+msgctxt "app"
+msgid "Description"
+msgstr "توضیحات"
+
+msgctxt "app"
+msgid "Detail"
+msgstr "جزئیات"
+
+msgctxt "app"
+msgid "Disable"
+msgstr "غیر فعال"
+
+msgctxt "app"
+msgid "Disabled"
+msgstr "غیرفعال شده"
+
+msgctxt "app"
+msgid "Download"
+msgstr "بارگذاری"
+
+msgctxt "app"
+msgid "Email"
+msgstr "ایمیل"
+
+msgctxt "app"
+msgid "Enable"
+msgstr "فعال"
+
+msgctxt "app"
+msgid "English"
+msgstr "انگلیسی"
+
+msgctxt "app"
+msgid "Error on saving advertisement."
+msgstr "خطا در ذخیره تبلیغات"
+
+msgctxt "app"
+msgid "Error on saving attachment."
+msgstr "خطا در ذخیره ضمیمه!"
+
+msgctxt "app"
+msgid "Error on saving category."
+msgstr "خطا در ذخیره بخش."
+
+msgctxt "app"
+msgid "Error on saving city."
+msgstr "خطا در ذخیره شهر."
+
+msgctxt "app"
+msgid "Error on saving country."
+msgstr "خطا در ذخیره کشور."
+
+msgctxt "app"
+msgid "Error on saving image."
+msgstr "خطا در ذخیره عکس."
+
+msgctxt "app"
+msgid "Error on saving province."
+msgstr "خطا در ذخیره استان."
+
+msgctxt "app"
+msgid "Error!"
+msgstr "خطا!"
+
+msgctxt "app"
+msgid "Find business in nearest you! - Introduce your business!"
+msgstr "یافتن نزدیکترین کسب و کار! - معرفی کسب و کار خود!"
+
+msgctxt "app"
+msgid "First"
+msgstr "اولین"
+
+msgctxt "app"
+msgid "Follow the link below to reset your password:"
+msgstr "با لینک زیر می توانید رمز عبور خود را بازیابی کنید."
+
+msgctxt "app"
+msgid ""
+"For change username or password please visit to site and login with your "
+"account."
+msgstr ""
+"برای تغییر نام کاربری و رمز عبور لطفاً به سایت مراجعه کنید و وارد سایت شوید."
+
+msgctxt "app"
+msgid "Gallery"
+msgstr "گالری تصاویر"
+
+msgctxt "app"
+msgid "Geographic"
+msgstr "جغرافیایی"
+
+msgctxt "app"
+msgid "Geographic location"
+msgstr "موفقیت جغرافیایی"
+
+msgctxt "app"
+msgid "Get location"
+msgstr "برو به محل انتخاب شده"
+
+msgctxt "app"
+msgid "Hello {username},"
+msgstr "سلام {username}"
+
+msgctxt "app"
+msgid "Hello, This is your registration information:"
+msgstr "سلام، اطلاعات عضویت شما:"
+
+msgctxt "app"
+msgid "Home"
+msgstr "صفحه اصلی"
+
+msgctxt "app"
+msgid "ID"
+msgstr "شماره شناسایی"
+
+msgctxt "app"
+msgid "IP"
+msgstr "آی پی"
+
+msgctxt "app"
+msgid "Icon"
+msgstr "آیکون"
+
+msgctxt "app"
+msgid "If you forgot your password you can reset it."
+msgstr "اگر رمز عبور خود را فراموش کردید آن را بازیابی کنید."
+
+msgctxt "app"
+msgid ""
+"If you have business inquiries or other questions, please fill out the "
+"following form to contact us. Thank you."
+msgstr "اگر سوال خاص و یا مشکلی دارید، فرم زیر را کامل و ارسال کنید."
+
+msgctxt "app"
+msgid "Image"
+msgstr "عکس"
+
+msgctxt "app"
+msgid "Image limitation per advertisement reached!"
+msgstr "تعداد عکس های شما برای این تبلیغات به حداکثر رسیده است."
+
+msgctxt "app"
+msgid "Image saved!"
+msgstr "عکس ذخیره شد!"
+
+msgctxt "app"
+msgid "Incorrect old password."
+msgstr "رمز عبور قدیمی صحیح نمی باشد."
+
+msgctxt "app"
+msgid "Incorrect username or password."
+msgstr "نام کاربری یا رمز عبور صحیح نمی باشد."
+
+msgctxt "app"
+msgid "Index"
+msgstr "شاخه"
+
+msgctxt "app"
+msgid "Information"
+msgstr "اطلاعات"
+
+msgctxt "app"
+msgid "Information successfully updated."
+msgstr "اطلاعات با موفقیت ذخیره شد."
+
+msgctxt "app"
+msgid "Introduce business"
+msgstr "معرفی مشاغل"
+
+msgctxt "app"
+msgid ""
+"Introduce your business, Your business on the map, image gallery for your "
+"business, attachments for your business, Mark your business location in map"
+msgstr ""
+"معرفی مشاغل خود رایگان-علامت گذاری مشاغل خود روی نقشه-گالری تصاویر برای "
+"مشاغل خوی-ضمیمه برای مشاغل خود-"
+
+msgctxt "app"
+msgid "Language"
+msgstr "زبان"
+
+msgctxt "app"
+msgid "Last"
+msgstr "آخرین"
+
+msgctxt "app"
+msgid "Latitude"
+msgstr "مختصات طولی"
+
+msgctxt "app"
+msgid "List View"
+msgstr "مشاهده لیست وار"
+
+msgctxt "app"
+msgid "Loading..."
+msgstr "در حال بارگذاری..."
+
+msgctxt "app"
+msgid "Login"
+msgstr "ورود"
+
+msgctxt "app"
+msgid "Login with"
+msgstr "ورود با"
+
+msgctxt "app"
+msgid "Logout ({username})"
+msgstr "خروج ({username})"
+
+msgctxt "app"
+msgid "Longitude"
+msgstr "مختصات عرضی"
+
+msgctxt "app"
+msgid "Maintenance"
+msgstr "مراقبت و نگهداری"
+
+msgctxt "app"
+msgid "Manager"
+msgstr "مدیریت"
+
+msgctxt "app"
+msgid "Map"
+msgstr "نقشه"
+
+msgctxt "app"
+msgid "Map View"
+msgstr "مشاهده با نقشه"
+
+msgctxt "app"
+msgid "My advertisement"
+msgstr "تبلیغات من"
+
+msgctxt "app"
+msgid "Name"
+msgstr "نام"
+
+msgctxt "app"
+msgid "New"
+msgstr "جدید"
+
+msgctxt "app"
+msgid "New category"
+msgstr "بخش جدید"
+
+msgctxt "app"
+msgid "New category successfully saved."
+msgstr "بخش جدید ذخیره شد."
+
+msgctxt "app"
+msgid "New city"
+msgstr "شهر جدید"
+
+msgctxt "app"
+msgid "New country"
+msgstr "کشور جدید"
+
+msgctxt "app"
+msgid "New password"
+msgstr "رمز عبور جدید"
+
+msgctxt "app"
+msgid "New province"
+msgstr "استان جدید"
+
+msgctxt "app"
+msgid "Next"
+msgstr "بعدی"
+
+msgctxt "app"
+msgid "No matching records found"
+msgstr "اطلاعاتی یافت نشد."
+
+msgctxt "app"
+msgid "Old password"
+msgstr "رمز عبور قدیمی"
+
+msgctxt "app"
+msgid "Panel"
+msgstr "بخش کاربری"
+
+msgctxt "app"
+msgid "Password"
+msgstr "رمز عبور"
+
+msgctxt "app"
+msgid "Password reset for {name}"
+msgstr "بازیابی رمز عبور برای {name}"
+
+msgctxt "app"
+msgid "Password reset token cannot be blank."
+msgstr "کد بازیابی رمز عبور نمی تواند خالی باشد."
+
+msgctxt "app"
+msgid "Password successfully updated."
+msgstr "رمز عبور با موفقیت تغییر یافت."
+
+msgctxt "app"
+msgid "Persian"
+msgstr "فارسی"
+
+msgctxt "app"
+msgid "Please contact us if you think this is a server error. Thank you."
+msgstr ""
+"اگر تشخصی می دهید این یک خطای سمت سرور است، لطفاً آن را به ما گزارش دهید."
+
+msgctxt "app"
+msgid "Previous"
+msgstr "قبلی"
+
+msgctxt "app"
+msgid "Province"
+msgstr "استان"
+
+msgctxt "app"
+msgid "Province name"
+msgstr "نام استان"
+
+msgctxt "app"
+msgid "Province successfully saved."
+msgstr "استان با موفقیت ذخیره شد."
+
+msgctxt "app"
+msgid "Provinces"
+msgstr "استان"
+
+msgctxt "app"
+msgid "Register"
+msgstr "ثبت نام"
+
+msgctxt "app"
+msgid "Register Advertisement"
+msgstr "ثبت تبلیغات"
+
+msgctxt "app"
+msgid "Registered with"
+msgstr "عضویت با"
+
+msgctxt "app"
+msgid "Remember me"
+msgstr "مرا بخاطر بسپار"
+
+msgctxt "app"
+msgid "Request password reset"
+msgstr "درخواست بازیابی رمز عبور"
+
+msgctxt "app"
+msgid "Reset password"
+msgstr "بازبابی رمز عبور"
+
+msgctxt "app"
+msgid "Role Manager"
+msgstr "مدیریت نقش ها"
+
+msgctxt "app"
+msgid "Save"
+msgstr "ذخیره"
+
+msgctxt "app"
+msgid "Search"
+msgstr "جستجو"
+
+msgctxt "app"
+msgid "Searching just over the showed area in the map"
+msgstr "جستجو فقط در ناحیه ای که در نقشه قابل مشاهده است انجام میگیرد."
+
+msgctxt "app"
+msgid "Select from map"
+msgstr "انتخاب از نقشه"
+
+msgctxt "app"
+msgid "Select..."
+msgstr "انتخاب..."
+
+msgctxt "app"
+msgid "Send"
+msgstr "فرستادن"
+
+msgctxt "app"
+msgid "Sorry, we are unable to reset password for email provided."
+msgstr "متاسفانه نمی توانیم با ایمیل وارد شده رمز عبور شما را بازیابی کنیم."
+
+msgctxt "app"
+msgid "Status"
+msgstr "وضعیت"
+
+msgctxt "app"
+msgid "Subject"
+msgstr "موضوع"
+
+msgctxt "app"
+msgid "Successfully deleted!"
+msgstr "با موفقیت حذف شد!"
+
+msgctxt "app"
+msgid "Successfully status changed!"
+msgstr "وضعیت با موفقیت تغییر یافت."
+
+msgctxt "app"
+msgid ""
+"Thank you for contacting us. We will respond to you as soon as possible."
+msgstr "ممنون از ارتباط با ما، در اولین فرصت به پیغام شما پاسخ داده خواهد شد."
+
+msgctxt "app"
+msgid ""
+"The above error occurred while the Web server was processing your request."
+msgstr "خطای بالا زمانی رخ داد که وب سرور رد حال پردازش اطلاعات شما بود."
+
+msgctxt "app"
+msgid "The requested file does not exist."
+msgstr "فایل درخواست شده یافت نشد."
+
+msgctxt "app"
+msgid "The requested page does not exist."
+msgstr "صفحه مورد نظر وجود ندارد."
+
+msgctxt "app"
+msgid "There is no user with such email."
+msgstr "کاربری با این ایمیل وجود ندارد."
+
+msgctxt "app"
+msgid "There was an error sending email."
+msgstr "هنگام فرستادن ایمیل خطا روی داد."
+
+msgctxt "app"
+msgid "This email address has already been taken."
+msgstr "ایمیل مورد نظر قبلاً ثبت شده است."
+
+msgctxt "app"
+msgid "This username has already been taken."
+msgstr "نام کاربری  مورد نظر قبلاً ثبت شده است."
+
+msgctxt "app"
+msgid "Title"
+msgstr "عنوان"
+
+msgctxt "app"
+msgid "Update"
+msgstr "بروز رسانی"
+
+msgctxt "app"
+msgid "Update advertisement {advertisement}"
+msgstr "بروز رسانی {advertisement}"
+
+msgctxt "app"
+msgid "Update information"
+msgstr "بروز رسانی اطلاعات"
+
+msgctxt "app"
+msgid "Update information {city}"
+msgstr "بروز رسانی {city}"
+
+msgctxt "app"
+msgid "Update information {country}"
+msgstr "بروز رسانی {country}"
+
+msgctxt "app"
+msgid "Update information {province}"
+msgstr "بروز رسانی {province}"
+
+msgctxt "app"
+msgid "Update information {username}"
+msgstr "بروز رسانی اطلاعات {username}"
+
+msgctxt "app"
+msgid "Update password"
+msgstr "بروز رسانی رمز عبور"
+
+msgctxt "app"
+msgid "Updated at"
+msgstr "بروز رسانی در"
+
+msgctxt "app"
+msgid "Upload"
+msgstr "فرستادن فایل"
+
+msgctxt "app"
+msgid "Uploading..."
+msgstr "در حال فرستادن فایل..."
+
+msgctxt "app"
+msgid "Username"
+msgstr "نام کاربری"
+
+msgctxt "app"
+msgid "Users Manager"
+msgstr "مدیریت کاربران"
+
+msgctxt "app"
+msgid "Verification Code"
+msgstr "کد تایید"
+
+msgctxt "app"
+msgid "Welcome to {name}"
+msgstr "خوش آمدید به {name}"
+
+msgctxt "app"
+msgid "Wrong password reset token."
+msgstr "کد بازیابی رمز عبور صحیح نمی باشد."
+
+msgctxt "app"
+msgid "You haven't enough permission to disable this user!"
+msgstr "شما دسترسی لازم برای فعال یا غیر فعال کردن مدیر ندارید!"
+
+msgctxt "app"
+msgid "Your password changed and your new password is:"
+msgstr "رمز عبور شما تغییر یافت و رمز عبور جدید شما:"
+
+msgctxt "app"
+msgid "Your password changed {name}"
+msgstr "رمز عبور شما تغییر یافت {name}"
+
+msgctxt "app"
+msgid "attachment"
+msgstr "ضمیمه"

@@ -1,0 +1,45 @@
+{
+    "name": "yiisoft/yii2-app-advanced",
+    "description": "Yii 2 Advanced Application Template",
+    "keywords": ["yii2", "framework", "advanced", "application template"],
+    "homepage": "http://www.yiiframework.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "kartik-v/yii2-widgets": "*",
+        "yiisoft/yii2-authclient": "*",
+        "codemix/yii2-localeurls": "*",
+        "mdmsoft/yii2-admin": "*",
+        "yiisoft/yii2-imagine": "*",
+        "vova07/yii2-imperavi-widget": "*",
+        "zendframework/zend-feed": "2.3.4",
+        "zendframework/zend-servicemanager": "2.3.4",
+        "2amigos/yii2-file-upload-widget" : "*",
+        "bower-asset/fancybox": "@stable",
+        "bower-asset/jquery-mousewheel": "@stable"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*"
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
