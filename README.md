@@ -116,6 +116,7 @@ THis project is good startup project to improve your knowledge in Yii2.
 4. Advanced filter to search.
 5. Use RBAC for user controlling.
 6. Project most section use AJAX.
+7. Multilingual.
 
 - for frontend `/path/to/admap-application/frontend/web/`
 - for backend `/path/to/admap-application/backend/web/`
