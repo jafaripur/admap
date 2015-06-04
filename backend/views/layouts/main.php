@@ -61,7 +61,9 @@ AppAsset::register($this);
     </div>
 	<footer class="footer">
 		<div style="text-align: center;">
-			<strong><?= Yii::t('app', 'Version {version}', ['version' => Yii::$app->version]); ?></strong>
+			<p><strong><?= Yii::t('app', 'Version {version}', ['version' => Yii::$app->version]); ?></strong></p>
+			<hr>
+			<p><a href="http://yiiframework.com" target="_blank"><img src="<?php echo Yii::$app->getRequest()->getBaseUrl(); ?>/static_asset/yii.png" title="Yii"></a></p>
 		</div>
 	</footer>
     <?php $this->endBody() ?>
