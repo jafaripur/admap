@@ -86,6 +86,11 @@ And in the last run composer update in root of the project:
 php composer.phar update
 ~~~
 
+### Configuration
+create new file `params-local.php` under `common/config` folder and put your database information and mail configuration.
+For AuthClient configuration (Social login) create new configuration file `params-local.php` under `frontend/config` and use AuthClient configuration instruction.
+
+
 ### Migration
 
 For migrate database just use this command and all needed table and data generate:
