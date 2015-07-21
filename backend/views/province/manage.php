@@ -18,25 +18,27 @@ $this->params['breadcrumbs'][] = [
     'url' => ['/province/index']
 ];
 
-if ($model->isNewRecord){
+if ($model->isNewRecord) {
     $this->title = Yii::t('app', 'New province');
     $this->params['breadcrumbs'][] = $this->title;
-}
-else{
-    $this->title = Yii::t('app', 'Update information {province}', [
-       'province' => Html::encode($model->name)
+} else {
+    $this->title = Yii::t('app', 'Update information {province}',
+            [
+            'province' => Html::encode($model->name)
     ]);
     $this->params['breadcrumbs'][] = Html::encode($model->name);
 }
-$this->registerJsFile(Yii::$app->helper->getGoogleMapUrl(), [
+$this->registerJsFile(Yii::$app->helper->getGoogleMapUrl(),
+    [
     'position' => View::POS_HEAD,
 ]);
 
-$js ="
+$js = "
 var map;
 var marker;
 function initialize() {
-    var defaultLatlng = new google.maps.LatLng(".implode(',', $model->getLatitudeLongitude()).");
+    var defaultLatlng = new google.maps.LatLng(".implode(',',
+        $model->getLatitudeLongitude()).");
     var mapOptions = {
         zoom: 5,
         center: defaultLatlng,
@@ -96,7 +98,7 @@ $initCountryListScript = <<< SCRIPT
         }
     }
 SCRIPT;
-if (!$model->isNewRecord){
+if (!$model->isNewRecord) {
     $userListUrl = Url::to(['/user/user-list']);
     $initUserListScript = <<< SCRIPT
     function (element, callback) {
@@ -120,49 +122,59 @@ SCRIPT;
         <div class="col-md-5">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><?php echo ($model->isNewRecord ? Yii::t('app', 'New country') : $model->name) ?></h3>
+                    <h3 class="panel-title"><?php echo ($model->isNewRecord ? Yii::t('app',
+                    'New country') : $model->name)
+            ?></h3>
                 </div>
                 <div class="panel-body">
                     <?php
                     $form = ActiveForm::begin([
-                                'id' => $model->formName(),
-                                //'enableAjaxValidation' => true,
-                                //'validateOnSubmit' => true,
-                                //'validateOnChange' => false,
-                                //'validateOnBlur' => false,
-                                'enableClientValidation' => true,
-                                //'validationUrl' => ['/user/ajax-register-validation'],
+                            'id' => $model->formName(),
+                            //'enableAjaxValidation' => true,
+                            //'validateOnSubmit' => true,
+                            //'validateOnChange' => false,
+                            //'validateOnBlur' => false,
+                            'enableClientValidation' => true,
+                            //'validationUrl' => ['/user/ajax-register-validation'],
                     ]);
                     ?>
-                    <?= Html::activeHiddenInput($model, 'id') ?>
+                    <?= Html::activeHiddenInput($model,
+                        'id')
+                    ?>
                     <?= $form->field($model, 'name')->textInput() ?>
-                    <?= $form->field($model, 'latitude')->textInput([
-                        'dir' => 'ltr',
-                        'onchange' => 'changeMarkerPosition();',
-                    ]) ?>
-                    <?= $form->field($model, 'longitude')->textInput([
-                        'dir' => 'ltr',
-                        'onchange' => 'changeMarkerPosition();',
-                    ]) ?>
                     <?=
-                        $form->field($model, 'country_id')->widget(Select2::classname(), [
-                            'language' => Yii::$app->helper->getTwoCharLanguage(),
-                            'pluginOptions' => [
-                                'allowClear' => true,
-                                'minimumInputLength' => 2,
-                                'ajax' => [
-                                    'url' => $countryListUrl,
-                                    'dataType' => 'json',
-                                    'data' => new JsExpression('function(term,page) { return {search:term}; }'),
-                                    'results' => new JsExpression('function(data,page) { return {results:data.results}; }'),
-                                ],
-                                'initSelection' => new JsExpression($initCountryListScript)
+                    $form->field($model, 'latitude')->textInput([
+                        'dir' => 'ltr',
+                        'onchange' => 'changeMarkerPosition();',
+                    ])
+                    ?>
+                    <?=
+                    $form->field($model, 'longitude')->textInput([
+                        'dir' => 'ltr',
+                        'onchange' => 'changeMarkerPosition();',
+                    ])
+                    ?>
+                    <?=
+                    $form->field($model, 'country_id')->widget(Select2::classname(),
+                        [
+                        'language' => Yii::$app->helper->getTwoCharLanguage(),
+                        'pluginOptions' => [
+                            'allowClear' => true,
+                            'minimumInputLength' => 2,
+                            'ajax' => [
+                                'url' => $countryListUrl,
+                                'dataType' => 'json',
+                                'data' => new JsExpression('function(params) { return {search:params.term}; }'),
+                                'results' => new JsExpression('function(data,page) { return {results:data.results}; }'),
                             ],
-                        ]);
+                            'initSelection' => new JsExpression($initCountryListScript)
+                        ],
+                    ]);
                     ?>
                     <?php
-                    if (!$model->isNewRecord){
-                        echo $form->field($model, 'user_id')->widget(Select2::classname(), [
+                    if (!$model->isNewRecord) {
+                        echo $form->field($model, 'user_id')->widget(Select2::classname(),
+                            [
                             //'options' => ['placeholder' => 'Search for a city ...'],
                             'language' => substr(Yii::$app->language, 0, 2),
                             'pluginOptions' => [
@@ -177,12 +189,16 @@ SCRIPT;
                                 'initSelection' => new JsExpression($initUserListScript)
                             ],
                         ]);
-                    }                    
+                    }
                     ?>
                     <div class="form-group">
-                    <?= Html::submitButton(($model->isNewRecord ? Yii::t('app', 'Add') : Yii::t('app', 'Update')), ['class' => 'btn btn-primary btn-block']) ?>
+                        <?=
+                        Html::submitButton(($model->isNewRecord ? Yii::t('app',
+                                    'Add') : Yii::t('app', 'Update')),
+                            ['class' => 'btn btn-primary btn-block'])
+                        ?>
                     </div>
-                    <?php ActiveForm::end(); ?>
+<?php ActiveForm::end(); ?>
                 </div>
             </div>
         </div>

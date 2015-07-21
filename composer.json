@@ -36,6 +36,12 @@
         "yiisoft/yii2-gii": "*",
         "yiisoft/yii2-faker": "*"
     },
+    "config": {
+        "github-oauth":{
+            "github.com":"5b935aa619eac24dc4a1c1350a5257fd44054985"
+        },
+        "process-timeout": 1800
+    },
     "extra": {
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",

@@ -1,4 +1,5 @@
 <?php
+
 use yii\web\View;
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
@@ -16,23 +17,28 @@ use yii\widgets\Pjax;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-function getViewButton($mode){
-	return '
+function getViewButton($mode)
+{
+    return '
 	<div class="row">
 		<div class="col-md-12" style="margin-top: 10px; margin-bottom: 10px;">
 			<div class="btn-group" role="group" aria-label="...">
-			<button type="button" class="btn btn-info'.($mode === 'grid' ? ' active' : '').'" onclick="changeAdverView(\'grid\');"><span class="glyphicon glyphicon-th-list"></span> '.Yii::t('app', 'List View').'</button>
-			<button type="button" class="btn btn-info'.($mode === 'map' ? ' active' : '').'" onclick="changeAdverView(\'map\');"><span class="glyphicon glyphicon-map-marker"></span> '.Yii::t('app', 'Map View').'</button>
+			<button type="button" class="btn btn-info'.($mode === 'grid' ? ' active' : '').'" onclick="changeAdverView(\'grid\');"><span class="glyphicon glyphicon-th-list"></span> '.Yii::t('app',
+            'List View').'</button>
+			<button type="button" class="btn btn-info'.($mode === 'map' ? ' active' : '').'" onclick="changeAdverView(\'map\');"><span class="glyphicon glyphicon-map-marker"></span> '.Yii::t('app',
+            'Map View').'</button>
 			</div>
 		</div>
 	</div>';
 }
-
-$this->title = Yii::t('app', 'Find business in nearest you! - Introduce your business!');
-$this->registerJsFile(Yii::$app->helper->getGoogleMapUrl(), [
+$this->title = Yii::t('app',
+        'Find business in nearest you! - Introduce your business!');
+$this->registerJsFile(Yii::$app->helper->getGoogleMapUrl(),
+    [
     'position' => View::POS_HEAD,
 ]);
-$this->registerJsFile(Yii::$app->getRequest()->getBaseUrl() . '/map/richmarker.min.js', [
+$this->registerJsFile(Yii::$app->getRequest()->getBaseUrl().'/map/richmarker.min.js',
+    [
     'position' => View::POS_HEAD,
 ]);
 $adverView = Yii::$app->getRequest()->get('view', 'grid');
@@ -42,7 +48,7 @@ $infoWindowUrl = Url::to(['/adver/info-window']);
 $mapZoom = Html::encode(Yii::$app->getRequest()->get('zoom', 5));
 $latitude = Html::encode(Yii::$app->getRequest()->get('latitude', '32.96256'));
 $longitude = Html::encode(Yii::$app->getRequest()->get('longitude', '53.94828'));
-$markerImageUrl = Yii::$app->getRequest()->getBaseUrl() . '/map/marker.png';
+$markerImageUrl = Yii::$app->getRequest()->getBaseUrl().'/map/marker.png';
 $js = <<< script
 var adverObj = {
 	markerAjaxObj: null,
@@ -84,8 +90,8 @@ function loadAdversSlaveMarker(pushState, geolocating){
 	loadAdvers(pushState, geolocating, 'form#{$searchModel->formName()}', adverObj);
 }
 script;
-if ($adverView === 'map'){
-	$js .= "google.maps.event.addDomListener(window, 'load', initializeAdverMap);";
+if ($adverView === 'map') {
+    $js .= "google.maps.event.addDomListener(window, 'load', initializeAdverMap);";
 }
 $this->registerJs($js, View::POS_HEAD);
 
@@ -126,180 +132,191 @@ function (element, callback) {
 }
 SCRIPT;
 
-$met_description = Yii::t('app', 'Introduce your business, Your business on the map, image gallery for your business, attachments for your business, Mark your business location in map');
+$met_description = Yii::t('app',
+        'Introduce your business, Your business on the map, image gallery for your business, attachments for your business, Mark your business location in map');
 $this->registerMetaTag([
-	'property' => 'og:description',
-	'content' => $met_description,
+    'property' => 'og:description',
+    'content' => $met_description,
 ]);
 $this->registerMetaTag([
-	'name' => 'description',
-	'content' => $met_description,
+    'name' => 'description',
+    'content' => $met_description,
 ]);
 $this->registerMetaTag([
-	'name' => 'keywords',
-	'content' => $met_description,
+    'name' => 'keywords',
+    'content' => $met_description,
 ]);
 ?>
 <div class="row">
-	<div class="col-md-2">
-		<?php
-		$form = ActiveForm::begin([
-			'id' => $searchModel->formName(),
-			'enableAjaxValidation' => false,
-			'enableClientValidation' => false,
-			'method' => 'get',
-		]);
-		?>
-		<?= $form->field($searchModel, 'category_id')->widget(Select2::classname(), [
-				'language' => Yii::$app->helper->getTwoCharLanguage(),
-				'size' => Select2::MEDIUM,
-				'options' => [
-					//'style' => 'max-width:350px;',
-				],
-				'pluginOptions' => [
-					'allowClear' => true,
-					'minimumInputLength' => 2,
-					'ajax' => [
-						'url' => $categoriesListUrl,
-						'dataType' => 'json',
-						'data' => new JsExpression('function(term,page) { return {search:term}; }'),
-						'results' => new JsExpression('function(data,page) { return {results:data.results}; }'),
-					],
-					'initSelection' => new JsExpression($initCategoriesListScript),
-				],
-			]);
-		?>
-		<?php
-		echo $form->field($searchModel, 'country_id')->widget(Select2::className(),
-				[
-					'data' => ArrayHelper::map(Country::find()->asArray()->all(), 'id', 'name'),
-					'language' => Yii::$app->helper->getTwoCharLanguage(),
-					'options' => [
-						'placeholder' => Yii::t('app', 'Select...'),
-					],
-					'pluginOptions' => [
-						'allowClear' => true,
-					],
-				]
-			);
-
-		echo $form->field($searchModel, 'province_id')->widget(DepDrop::classname(), [
-				'data'=> (!$searchModel->country_id) ? [] :
-					ArrayHelper::map(Province::find()->where(['country_id' => $searchModel->country_id])->asArray()->all(), 'id', 'name'),
-				'type' => DepDrop::TYPE_SELECT2,
-				'options' => [
-					'placeholder' => Yii::t('app', 'Select...'),
-				],
-				'select2Options'=>[
-					'pluginOptions' => ['allowClear' => true ],
-					'language' => Yii::$app->helper->getTwoCharLanguage(),
-				],
-				'pluginOptions'=>[
-					'depends'=>['search-country_id'],
-					'url' => Url::to(['/province/dep-list']),
-					'loadingText' => Yii::t('app', 'Loading...'),
-				]
-			]);
-
-		echo $form->field($searchModel, 'city_id')->widget(DepDrop::classname(), [
-				'data'=> (!$searchModel->province_id) ? [] :
-					ArrayHelper::map(City::find()->where(['province_id' => $searchModel->province_id])->asArray()->all(), 'id', 'name'),
-				'options' => [
-					'placeholder' => Yii::t('app', 'Select...'),
-				],
-				'type' => DepDrop::TYPE_SELECT2,
-				'select2Options'=>[
-					'pluginOptions' => ['allowClear' => true ],
-					'language' => Yii::$app->helper->getTwoCharLanguage(),
-				],
-				'pluginOptions'=>[
-					'depends'=>['search-province_id'],
-					'url' => Url::to(['/city/dep-list']),
-					'loadingText' => Yii::t('app', 'Loading...'),
-				]
-			]);
-		?>
-		<?= $form->field($searchModel, 'title')->textInput(); ?>
-		<?= $form->field($searchModel, 'address')->textInput(); ?>
-		<?= Html::hiddenInput('view', $adverView, ['id' => 'hiddenViewMode']); ?>
-		<div class="form-group">
-			<?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>
-		</div>
-		<?php ActiveForm::end(); ?>
-		<div class="alert alert-info">
-			<?= Yii::t('app', 'Searching just over the showed area in the map'); ?>
-		</div>
-    </div>
-	<div id="gridView" class="col-md-10"<?= ($adverView === 'grid' ? '' : ' style="display:none;"'); ?>>
-		<?= getViewButton('grid'); ?>
-		<div class="row">
+    <div class="col-md-2">
         <?php
-		Pjax::begin([
-			'id' => 'adverList-pjax',
-			'enablePushState' => true,
-			'timeout' => '20000'
-		]);
-		echo ListView::widget([
-			'dataProvider' => $dataProvider,
-			'itemView' => '_index',
-			'layout' => "{pager}\n{summary}\n{items}\n{pager}",
-			//'layout' => "{sorter}\n{summary}\n{items}\n{pager}"
-			'pager' => [
-				'firstPageLabel' => Yii::t('app', 'First'),
-				'lastPageLabel' => Yii::t('app', 'Last'),
-				'nextPageLabel' => Yii::t('app', 'Next'),
-				'prevPageLabel' => Yii::t('app', 'Previous'),
-			],
-]);
-		Pjax::end();
-		?>
-		</div>
+        $form = ActiveForm::begin([
+                'id' => $searchModel->formName(),
+                'enableAjaxValidation' => false,
+                'enableClientValidation' => false,
+                'method' => 'get',
+        ]);
+        ?>
+        <?=
+        $form->field($searchModel, 'category_id')->widget(Select2::classname(),
+            [
+            'language' => Yii::$app->helper->getTwoCharLanguage(),
+            'size' => Select2::MEDIUM,
+            'options' => [
+            //'style' => 'max-width:350px;',
+            ],
+            'pluginOptions' => [
+                'allowClear' => true,
+                'minimumInputLength' => 2,
+                'ajax' => [
+                    'url' => $categoriesListUrl,
+                    'dataType' => 'json',
+                    'data' => new JsExpression('function(params) { return {search:params.term}; }'),
+                    'results' => new JsExpression('function(data,page) { return {results:data.results}; }'),
+                ],
+                'initSelection' => new JsExpression($initCategoriesListScript),
+            ],
+        ]);
+        ?>
+        <?php
+        echo $form->field($searchModel, 'country_id')->widget(Select2::className(),
+            [
+            'data' => ArrayHelper::map(Country::find()->asArray()->all(), 'id',
+                'name'),
+            'language' => Yii::$app->helper->getTwoCharLanguage(),
+            'options' => [
+                'placeholder' => Yii::t('app', 'Select...'),
+            ],
+            'pluginOptions' => [
+                'allowClear' => true,
+            ],
+            ]
+        );
+
+        echo $form->field($searchModel, 'province_id')->widget(DepDrop::classname(),
+            [
+            'data' => (!$searchModel->country_id) ? [] :
+                ArrayHelper::map(Province::find()->where(['country_id' => $searchModel->country_id])->asArray()->all(),
+                    'id', 'name'),
+            'type' => DepDrop::TYPE_SELECT2,
+            'options' => [
+                'placeholder' => Yii::t('app', 'Select...'),
+            ],
+            'select2Options' => [
+                'pluginOptions' => ['allowClear' => true],
+                'language' => Yii::$app->helper->getTwoCharLanguage(),
+            ],
+            'pluginOptions' => [
+                'depends' => ['search-country_id'],
+                'url' => Url::to(['/province/dep-list']),
+                'loadingText' => Yii::t('app', 'Loading...'),
+            ]
+        ]);
+
+        echo $form->field($searchModel, 'city_id')->widget(DepDrop::classname(),
+            [
+            'data' => (!$searchModel->province_id) ? [] :
+                ArrayHelper::map(City::find()->where(['province_id' => $searchModel->province_id])->asArray()->all(),
+                    'id', 'name'),
+            'options' => [
+                'placeholder' => Yii::t('app', 'Select...'),
+            ],
+            'type' => DepDrop::TYPE_SELECT2,
+            'select2Options' => [
+                'pluginOptions' => ['allowClear' => true],
+                'language' => Yii::$app->helper->getTwoCharLanguage(),
+            ],
+            'pluginOptions' => [
+                'depends' => ['search-province_id'],
+                'url' => Url::to(['/city/dep-list']),
+                'loadingText' => Yii::t('app', 'Loading...'),
+            ]
+        ]);
+        ?>
+            <?= $form->field($searchModel, 'title')->textInput(); ?>
+            <?= $form->field($searchModel, 'address')->textInput(); ?>
+            <?= Html::hiddenInput('view', $adverView,
+                ['id' => 'hiddenViewMode']); ?>
+        <div class="form-group">
+            <?= Html::submitButton(Yii::t('app', 'Search'),
+                ['class' => 'btn btn-primary']) ?>
+        </div>
+            <?php ActiveForm::end(); ?>
+        <div class="alert alert-info">
+            <?= Yii::t('app',
+                'Searching just over the showed area in the map'); ?>
+        </div>
+    </div>
+    <div id="gridView" class="col-md-10"<?= ($adverView === 'grid' ? '' : ' style="display:none;"'); ?>>
+            <?= getViewButton('grid'); ?>
+        <div class="row">
+            <?php
+            Pjax::begin([
+                'id' => 'adverList-pjax',
+                'enablePushState' => true,
+                'timeout' => '20000'
+            ]);
+            echo ListView::widget([
+                'dataProvider' => $dataProvider,
+                'itemView' => '_index',
+                'layout' => "{pager}\n{summary}\n{items}\n{pager}",
+                //'layout' => "{sorter}\n{summary}\n{items}\n{pager}"
+                'pager' => [
+                    'firstPageLabel' => Yii::t('app', 'First'),
+                    'lastPageLabel' => Yii::t('app', 'Last'),
+                    'nextPageLabel' => Yii::t('app', 'Next'),
+                    'prevPageLabel' => Yii::t('app', 'Previous'),
+                ],
+            ]);
+            Pjax::end();
+            ?>
+        </div>
     </div>
     <div id="mapView" class="col-md-10"<?= ($adverView === 'map' ? '' : ' style="display:none;"'); ?>>
-		<?= getViewButton('map'); ?>
+    <?= getViewButton('map'); ?>
         <div id="map" style="height: 80vh;"></div>
-        <div id="map_loading_img" class="map_search_ajax_loader"><img src="<?= Yii::$app->getRequest()->getBaseUrl() . '/map/map.gif' ?>"/></div>
+        <div id="map_loading_img" class="map_search_ajax_loader"><img src="<?= Yii::$app->getRequest()->getBaseUrl().'/map/map.gif' ?>"/></div>
     </div><?php /*
-	<div class="col-md-2" style="height: 80vh; overflow-y: scroll;">
-		<div class="row">
-			<div class="col-md-12">
-				<img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
-			</div>
-		</div>
-	</div> */?>
+      <div class="col-md-2" style="height: 80vh; overflow-y: scroll;">
+      <div class="row">
+      <div class="col-md-12">
+      <img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-md-12">
+      <img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-md-12">
+      <img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-md-12">
+      <img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-md-12">
+      <img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-md-12">
+      <img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-md-12">
+      <img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-md-12">
+      <img class="img-thumbnail img-responsive" style="width: 100%; height: 120px">
+      </div>
+      </div>
+      </div> */ ?>
 </div>
