@@ -135,5 +135,3 @@ For administrator access use this credential information:
 Username: admin
 Password: 123456
 ~~~
-
-For checking demo visit [admap.ir](http://admap.ir)
